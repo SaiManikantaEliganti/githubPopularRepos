@@ -38,7 +38,7 @@ class GithubPopularRepos extends Component {
     const response = await fetch(apiUrl)
     if (response.ok) {
       const fetchData = await response.json()
-      const updatedData = fetchData.popular_map(eachRepository => ({
+      const updatedData = fetchData.popular_repos.map(eachRepository => ({
         id: eachRepository.id,
         imageUrl: eachRepository.avatar_url,
         name: eachRepository.name,
