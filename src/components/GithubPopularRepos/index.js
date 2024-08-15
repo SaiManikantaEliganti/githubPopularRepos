@@ -130,7 +130,7 @@ class GithubPopularRepos extends Component {
       <div className="app-container">
         <div className="responsive-container">
           <h1 className="heading">Popular</h1>
-          {this.renderLanguageFiltersList()}
+          {this.renderLanguageFilterList()}
           {this.renderRepositories()}
         </div>
       </div>
